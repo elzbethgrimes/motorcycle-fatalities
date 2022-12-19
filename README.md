@@ -16,6 +16,6 @@ Jupyter, the dataset was transformed to run a logistic regression on it and
 determine if behavioral risk factors increase a person’s chances of dying in a
 motorcycle accident, and those individual risk factors were identified.
 
-The files included here are the SQL statments used to create the dataset in SQL Server, 
+The files included here are the SQL statments used to create the dataset in SQL Server (sql-motorcycle-fatalities), 
 the cleaned dataset, and the Jupyter file.
 
