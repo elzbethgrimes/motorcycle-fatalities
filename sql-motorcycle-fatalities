@@ -1,0 +1,40 @@
+SELECT p.CASENUM, p.VEH_NO, p.MONTH, p.hour, a.YEAR, a.DAY_WEEK,
+    p.INJ_SEVNAME, p.REST_USENAME, p.DRINKINGNAME, p.DRUGSNAME, d.IMPAIRMENT
+FROM CRSS.. accident2016 a
+JOIN CRSS.. person2016 p ON a.CASENUM = p.CASENUM
+JOIN CRSS..drimpair2016 d ON a.CASENUM = d.CASENUM and p.VEH_NO = d.VEH_NO
+WHERE p.PER_TYP like '1' and --driver is 1
+    p.BODY_TYP in ('80', '81', '82', '83', '84', '85', '86', '87', '88', '89') -- All motorcycles off road and moped included
+
+
+UNION
+
+SELECT p.CASENUM, p.VEH_NO, p.MONTH, p.hour, a.YEAR, a.DAY_WEEK,
+    p.INJ_SEVNAME, p.REST_USENAME, p.DRINKINGNAME, p.DRUGSNAME, d.IMPAIRMENT
+FROM CRSS..accident2017 a
+JOIN CRSS..person2017 p ON a.CASENUM = p.CASENUM
+JOIN CRSS..drimpair2017 d ON a.CASENUM = d.CASENUM and p.VEH_NO = d.VEH_NO
+WHERE p.PER_TYP like '1' and --driver is 1
+    p.BODY_TYP in ('80', '81', '82', '83', '84', '85', '86', '87', '88', '89')  -- All motorcycles off road and moped included
+
+
+UNION 
+
+SELECT p.CASENUM, p.VEH_NO, p.MONTH, p.hour, a.YEAR, a.DAY_WEEK,
+    p.INJ_SEVNAME, p.REST_USENAME, p.DRINKINGNAME, p.DRUGSNAME, d.IMPAIRMENT
+FROM CRSS..accident2018 a
+JOIN CRSS..person2018 p ON a.CASENUM = p.CASENUM
+JOIN CRSS..drimpair2018 d ON a.CASENUM = d.CASENUM and p.VEH_NO = d.VEH_NO
+WHERE p.PER_TYP like '1' and --driver is 1
+    p.BODY_TYP in ('80', '81', '82', '83', '84', '85', '86', '87', '88', '89')  -- All motorcycles off road and moped included
+
+UNION
+
+SELECT p.CASENUM, p.VEH_NO, p.MONTH, p.hour, a.YEAR, a.DAY_WEEK,
+    p.INJ_SEVNAME, p.HELM_USENAME, p.DRINKINGNAME, p.DRUGSNAME, d.DRIMPAIRNAME
+FROM CRSS..accident2019 a
+JOIN CRSS..person2019 p ON a.CASENUM = p.CASENUM
+JOIN CRSS..drimpair2019 d ON a.CASENUM = d.CASENUM and p.VEH_NO = d.VEH_NO
+WHERE p.PER_TYP like '1' and --driver is 1
+    p.BODY_TYP in ('80', '81', '82', '83', '84', '85', '86', '87', '88', '89')  -- All motorcycles off road and moped included
+ORDER BY p.CASENUM
