@@ -18,5 +18,5 @@ motorcycle accident, and those individual risk factors were identified.
 
 The files included here are the SQL statments used to create the dataset in 
 SQL Server (sql-motorcycle-fatalities), the cleaned dataset (crss_1619_csv.csv),
-and the Jupyter file.
+and the Jupyter file (Capstone Final Logistic Regression Chi.ipynb).
 
