@@ -1,7 +1,7 @@
 # motorcycle-fatalities
-Analysis of behavioral risk factors that impact a person's likelihood of being involved in a fatal motorcycle accident.
+Analysis of behavioral risk factors that impact a person\'s likelihood of being involved in a fatal motorcycle accident.
 
-This project's scope was to create a clean dataset that was analyzed using
+This project\'s scope was to create a clean dataset that was analyzed using
 descriptive statistical methods to ascertain what behavioral risk factors contribute
 to motorcycle fatalities. The analysis included a Jupyter Notebook which contains
 a logistic regression analysis of the dataset and determined which behaviors are
