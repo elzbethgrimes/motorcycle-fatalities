@@ -1,7 +1,7 @@
 # motorcycle-fatalities
-Analysis of behavioral risk factors that impact a person\'s likelihood of being involved in a fatal motorcycle accident.
+Analysis of behavioral risk factors that impact a person's likelihood of being involved in a fatal motorcycle accident.
 
-This project\'s scope was to create a clean dataset that was analyzed using
+This project's scope was to create a clean dataset that was analyzed using
 descriptive statistical methods to ascertain what behavioral risk factors contribute
 to motorcycle fatalities. The analysis included a Jupyter Notebook which contains
 a logistic regression analysis of the dataset and determined which behaviors are
@@ -17,6 +17,5 @@ determine if behavioral risk factors increase a person’s chances of dying in a
 motorcycle accident, and those individual risk factors were identified.
 
 The files included here are the SQL statments used to create the dataset in 
-SQL Server (<mark>sql-motorcycle-fatalities</mark>), the cleaned dataset (<mark>crss_1619_csv.csv</mark>),
-and the Jupyter file (<mark>Capstone Final Logistic Regression Chi.ipynb</mark>).
-
+SQL Server (`sql-motorcycle-fatalities`), the cleaned dataset (`crss_1619_csv.csv`),
+and the Jupyter file (`Capstone Final Logistic Regression Chi.ipynb`).
